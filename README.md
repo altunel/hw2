@@ -61,31 +61,31 @@ All the images were taken against a dark homogeneous background with the subject
 
 
 
-Advantages and limitations of using PCA in general. Limitations in context of face recognition
+#### Advantages of using PCA in general and limitations of PCA in context of face recognitation.
 
 **Answer:**
 
-Advantages:
+**Advantages**:
 
-Reduces the number of variables: PCA can help reduce the number of variables in a dataset while retaining the most important information. This can help simplify analysis and improve model performance.
+* Reduces the number of variables: PCA can help reduce the number of variables in a dataset while retaining the most important information. This can help simplify analysis and improve model performance.
 
-Increases interpretability: PCA transforms variables into a new set of variables that are uncorrelated and have a clear interpretation. This can help improve the interpretability of the data and make it easier to understand.
+* Increases interpretability: PCA transforms variables into a new set of variables that are uncorrelated and have a clear interpretation. This can help improve the interpretability of the data and make it easier to understand.
 
-Improves visualization: PCA can be used to visualize high-dimensional data in a lower-dimensional space, making it easier to see patterns and relationships.
+* Improves visualization: PCA can be used to visualize high-dimensional data in a lower-dimensional space, making it easier to see patterns and relationships.
 
-Limitations:
+**Limitations**:
 
-Assumes linear relationships: PCA assumes that the relationships between variables are linear. If there are non-linear relationships, PCA may not be appropriate.
+* Assumes linear relationships: PCA assumes that the relationships between variables are linear. If there are non-linear relationships, PCA may not be appropriate.
 
-Can be sensitive to outliers: PCA can be sensitive to outliers, which can have a significant impact on the results.
+* Can be sensitive to outliers: PCA can be sensitive to outliers, which can have a significant impact on the results.
 Requires data scaling: PCA requires that variables be scaled to have the same variance, which can be problematic if variables have very different scales.
 
 In the context of face recognition, PCA has some additional limitations:
 
-Limited ability to capture facial variations: PCA is not always able to capture the full range of facial variations, such as changes in lighting or expression, which can limit its effectiveness in face recognition applications.
+* Limited ability to capture facial variations: PCA is not always able to capture the full range of facial variations, such as changes in lighting or expression, which can limit its effectiveness in face recognition applications.
 
-Limited accuracy: While PCA can be effective for face recognition in some situations, it is not always accurate enough for use in high-security applications where identification must be highly reliable.
+* Limited accuracy: While PCA can be effective for face recognition in some situations, it is not always accurate enough for use in high-security applications where identification must be highly reliable.
 
-Limited ability to handle large datasets: PCA can be computationally expensive and may not be suitable for very large datasets.
+* Limited ability to handle large datasets: PCA can be computationally expensive and may not be suitable for very large datasets.
 
 
