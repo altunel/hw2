@@ -33,30 +33,30 @@ All the images were taken against a dark homogeneous background with the subject
 
 ### Steps for Implementation of PCA Algorithm
 
-1.**Standardize the data**: PCA is sensitive to the scale of the input data, so it is important to standardize the data to have zero mean and unit variance.
+1. **Standardize the data**: PCA is sensitive to the scale of the input data, so it is important to standardize the data to have zero mean and unit variance.
 
-2.**Compute the covariance matrix**: Calculate the covariance matrix of the standardized data. This matrix shows how the different features of the data are related to each other.
+2. **Compute the covariance matrix**: Calculate the covariance matrix of the standardized data. This matrix shows how the different features of the data are related to each other.
 
-3.**Compute the eigenvectors and eigenvalues of the covariance matrix**: The eigenvectors are the principal components, and the eigenvalues indicate the amount of variance explained by each principal component.
+3. **Compute the eigenvectors and eigenvalues of the covariance matrix**: The eigenvectors are the principal components, and the eigenvalues indicate the amount of variance explained by each principal component.
 
-4.**Select the principal components**: Sort the eigenvectors by their corresponding eigenvalues in descending order, and select the top k eigenvectors to form the new lower-dimensional space. This new space will have k dimensions, where k is less than the original number of dimensions.
+4. **Select the principal components**: Sort the eigenvectors by their corresponding eigenvalues in descending order, and select the top k eigenvectors to form the new lower-dimensional space. This new space will have k dimensions, where k is less than the original number of dimensions.
 
 
 ### Steps for Implementation of Image Reconstruction from Eigenfaces
 
-1.**Load the image**: Load the image that you want to reconstruct.
+1. **Load the image**: Load the image that you want to reconstruct.
 
-2.**Vectorize the image**: Convert the grayscale image into a 1D vector.
+2. **Vectorize the image**: Convert the grayscale image into a 1D vector.
 
-3.**Standardize the data**
+3. **Standardize the data**
 
-4.**Compute the eigenvectors and eigenvalue**s: Compute the eigenvectors and eigenvalues of the covariance matrix of the standardized vector.
+4. **Compute the eigenvectors and eigenvalue**s: Compute the eigenvectors and eigenvalues of the covariance matrix of the standardized vector.
 
-5.**Select the principal components**: Choose the top k eigenvectors that explain the most variance in the data. This will be the lower-dimensional representation of the image.
+5. **Select the principal components**: Choose the top k eigenvectors that explain the most variance in the data. This will be the lower-dimensional representation of the image.
 
-6.**Project the image onto the lower-dimensional space**: Project the standardized vector onto the selected eigenvectors to obtain the lower-dimensional representation.
+6. **Project the image onto the lower-dimensional space**: Project the standardized vector onto the selected eigenvectors to obtain the lower-dimensional representation.
 
-7.**Reconstruct the image**: Multiply the lower-dimensional representation by the selected eigenvectors and add the mean of the standardized vector to obtain the reconstructed image.
+7. **Reconstruct the image**: Multiply the lower-dimensional representation by the selected eigenvectors and add the mean of the standardized vector to obtain the reconstructed image.
 
 
 
